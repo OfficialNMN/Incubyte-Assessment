@@ -8,8 +8,8 @@ FROM
 	
 -- Time range of transactions
 SELECT 
-    MIN(TransactionDate) AS first_transaction_date,
-    MAX(TransactionDate) AS last_transaction_date
+    MIN(STRPTIME(TransactionDate, '%m/%d/%Y %H:%M')) AS first_transaction_time,
+    MAX(STRPTIME(TransactionDate, '%m/%d/%Y %H:%M')) AS last_transaction_time
 FROM transactions;
 
 
