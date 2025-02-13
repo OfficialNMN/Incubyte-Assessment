@@ -39,7 +39,7 @@ FROM transactions;
 
 -- Sales metrics
 SELECT 
-    COUNT(*) AS num_transactions,
+    COUNT(*) AS total_transactions,
     ROUND(SUM(TransactionAmount),2) AS net_sales,
     ROUND(SUM(CASE WHEN TransactionAmount > 0 THEN TransactionAmount ELSE 0 END),2) AS gross_sales,
     ROUND(AVG(CASE WHEN TransactionAmount > 0 THEN TransactionAmount ELSE 0 END),2) AS avg_transaction_value,
