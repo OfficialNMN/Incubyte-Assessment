@@ -10,5 +10,6 @@ The primary goals of this assessment are:
 - Identify actionable business insights based on data-driven findings
 - Follow SQL best practices and demonstrate a passion for problem-solving
 
-### SQL Queries
-All SQL scripts used for data exploration and insights generation can be found in the sql_scripts directory
+### SQL Queries and Insights
+- All SQL scripts used for data exploration and insights generation can be found in the `sql_scripts` directory
+- The document `Assessment-Key-Insights.pdf` contains a comprehensive analysis of key data insights
