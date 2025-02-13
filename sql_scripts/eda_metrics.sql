@@ -108,3 +108,13 @@ SELECT
     ROUND(PERCENTILE_CONT(0.50) WITHIN GROUP (ORDER BY DeliveryTimeDays), 2) AS median_delivery_time,
     ROUND(PERCENTILE_CONT(0.50) WITHIN GROUP (ORDER BY ShippingCost), 2) AS median_shipping_cost
 FROM transactions;
+
+
+-- Returns by City
+SELECT 
+	City, 
+	COUNT(TransactionID) as total_returns
+FROM transactions
+WHERE Returned = 'Yes'
+GROUP BY City
+ORDER BY total_returns DESC
