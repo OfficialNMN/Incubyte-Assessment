@@ -9,6 +9,7 @@ GROUP BY CustomerID
 ORDER BY total_points DESC 
 LIMIT 10;
 
+
 -- Effectiveness of Discounts on Sales
 WITH binned_data AS (
     SELECT 
